@@ -2,5 +2,6 @@
 - react-input-mask,
 - react-phone-number-input,
 - sass,
-- yup
+- yup.
+  
 Адаптивная верстка, слайдеры, анимация
