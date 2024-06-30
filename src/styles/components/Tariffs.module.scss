@@ -1,0 +1,265 @@
+@import '../utils/mixinsMobile.scss';
+
+.line-button {
+    z-index: 20;
+    position: relative;
+    left: -467px;
+    top: 300px;
+    width: 1062px;
+    height: 1px;
+    transform: rotate(90deg);
+    background: linear-gradient(
+        90deg,
+        rgba(46, 236, 197, 0) 0%,
+        rgba(46, 236, 197, 1) 50%,
+        rgba(46, 236, 197, 1) 50%,
+        rgba(46, 236, 197, 0) 100%
+    );
+}
+.scroll-button {
+  position: relative;
+  left: 106px;
+
+  @include respond-to(mobile-portrait) {//0px
+    display: none;
+  }
+  @include respond-to(mobile) {//320px
+    display: none;
+  } 
+  @include respond-to(mobile-landscape) {//480px
+    display: none;
+    }
+
+  @include respond-to(tablet-portrait) {//768px
+    display: block;
+    left: -20px;
+  }
+  @include respond-to(tablet-landscape) {//992px
+    }
+  @include respond-to(desktop) {//1200px
+     left: 0px;
+    }
+  @include respond-to(large-desktop) {//1600px
+     left: 80px;
+    }
+  @include respond-to(tv) {//1920px
+    left: 106px;
+    }
+}
+.small-button-4 {
+    position: relative;
+    left: 56px;
+    top: 100px;
+    z-index: 10;
+
+    @include respond-to(mobile-portrait) {//0px
+  }
+
+  @include respond-to(mobile) {//320px
+  } 
+
+@include respond-to(mobile-landscape) {//480px
+  }
+
+  @include respond-to(tablet-portrait) {//768px
+  }
+
+@include respond-to(tablet-landscape) {//992px
+  }
+@include respond-to(desktop) {//1200px
+  }
+@include respond-to(large-desktop) {//1600px
+  }
+@include respond-to(tv) {//1920px
+    left: 56px;
+    top: 82px;
+
+  }
+
+&::before {
+    content: '04';
+    position: absolute;
+    top: 50%;
+    left: -40px; /* Добавляем расстояние в 14px от кнопки */
+    transform: translateY(-50%);
+    background:  linear-gradient(180deg, #5d7c76 0%, #0a3028 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    font-family: Ruberoid;
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 35px;
+    letter-spacing: 0%;
+    z-index: 10;
+}
+}
+
+.small-button-5 {
+    position: relative;
+    left: 56px;
+    top: 590px;
+    z-index: 10;
+
+    @include respond-to(mobile-portrait) {//0px
+  }
+
+  @include respond-to(mobile) {//320px
+  } 
+
+@include respond-to(mobile-landscape) {//480px
+  }
+
+  @include respond-to(tablet-portrait) {//768px
+  }
+
+@include respond-to(tablet-landscape) {//992px
+  }
+@include respond-to(desktop) {//1200px
+  }
+@include respond-to(large-desktop) {//1600px
+  }
+@include respond-to(tv) {//1920px
+  }
+
+&::before {
+    content: '05';
+    position: absolute;
+    top: 50%;
+    left: -40px; /* Добавляем расстояние в 14px от кнопки */
+    transform: translateY(-50%);
+    background:  linear-gradient(180deg, #5d7c76 0%, #0a3028 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    font-family: Ruberoid;
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 35px;
+    letter-spacing: 0%;
+    z-index: 10;
+}
+}
+
+.section-line-bottom {
+    position: relative;
+    top: 0;
+    width: 1920px;
+    height: 5px;
+    background: linear-gradient(135.00deg, rgba(42, 188, 158, 0) 0%,rgb(42, 188, 158) 48.646%,rgba(42, 188, 158, 0) 100%);
+}
+
+.section-title {
+max-width: 100%;
+
+margin-bottom: 41px;
+text-align: center;
+
+    h2 {
+        margin-bottom: 13px;
+    }
+
+    p {
+        &:not(:last-child) {
+        margin-bottom: 13px; /* Отступ между абзацами, кроме последнего */
+        }
+    }
+
+    @include respond-to(mobile-portrait) {//0px
+      // padding-inline:20px;
+      margin-top: 15px;
+      margin-left: -10px;
+      width: 100vw;
+      text-align: center;
+      margin-bottom: 0;
+  }
+  @include respond-to(mobile) {//320px
+padding-inline:20px;
+width: 100%;
+  } 
+@include respond-to(mobile-landscape) {//480px
+ margin-top: 118px;
+  }
+  @include respond-to(tablet-portrait) {//768px
+    padding-top: 0;
+    margin-top: 0;
+    width: 100%;
+    
+  }
+}
+// ---------------------------
+
+.tariffs {
+height: 100%;
+width: 100%;
+//    margin-top: 164px;
+    &__inner {
+        padding-bottom: 220px;
+        width: 1276px;
+        height: 100%;
+        margin-left: 325px;
+        z-index: 10;
+
+        @include respond-to(mobile-portrait) {//0px
+          margin-inline:auto;
+          padding-bottom: 0;
+         
+  }
+
+  @include respond-to(mobile) {//320px
+    margin-left: 0px;
+  } 
+
+@include respond-to(mobile-landscape) {//480px
+    margin-left: 0px;
+  }
+
+  @include respond-to(tablet-portrait) {//768px
+    margin-left: 0px;
+   
+  }
+
+@include respond-to(tablet-landscape) {//992px
+    margin-left: 0px;
+  }
+@include respond-to(desktop) {//1200px
+    // padding-left: 50px;
+    // margin-left: 40px;
+  }
+@include respond-to(large-desktop) {//1600px
+    margin-left: 150px;
+    width: 100%;
+  }
+@include respond-to(tv) {//1920px
+  }
+    }
+    &__container {
+        display: flex;
+        gap: 111px;
+        height: 100%;
+        
+    }
+}
+
+@include respond-to(mobile-portrait) {//0px
+  }
+
+  @include respond-to(mobile) {//320px
+  } 
+
+@include respond-to(mobile-landscape) {//480px
+  }
+
+  @include respond-to(tablet-portrait) {//768px
+  }
+
+@include respond-to(tablet-landscape) {//992px
+  }
+@include respond-to(desktop) {//1200px
+  }
+@include respond-to(large-desktop) {//1600px
+  }
+@include respond-to(tv) {//1920px
+  }

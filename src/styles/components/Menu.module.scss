@@ -1,0 +1,68 @@
+@import '../utils/mixinsMobile.scss';
+
+.menu {
+  width: 478px;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+
+    @include respond-to(mobile-portrait) {//0px
+          display: none;
+        }
+
+        @include respond-to(mobile) {//320px
+          display: none;
+        }
+
+        @include respond-to(mobile-m) {//375px
+          display: none;
+        } 
+        @include respond-to(mobile-l) {//425px
+          display: none;
+        } 
+
+        @include respond-to(mobile-landscape) {//480px
+          display: none;
+        }
+
+        @include respond-to(tablet-portrait) {//768px
+          display: flex;
+          width: 400px;
+        }
+
+        @include respond-to(tablet-landscape) {//992px
+          width: 478px;
+          }
+
+
+    &__item {
+      height: 56px;
+      display: flex;
+      align-items: center;
+    }
+
+    &__link {
+        position: relative;
+        transition: color 0.3s ease;
+        
+        &:hover{
+        opacity: 0.7;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 0%;
+            height: 2px;
+            background-color: white;
+            opacity: 0.7;
+            transition: width 0.3s ease;
+}
+
+        &:hover::after {
+            width: 100%;
+        }
+    }
+}

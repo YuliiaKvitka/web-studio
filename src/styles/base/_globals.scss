@@ -1,0 +1,134 @@
+@import '../utils/mixinsMobile.scss';
+
+// Add global styles
+@font-face {
+  font-family: 'Ruberoid';
+  src: url('/fonts/Ruberoid-Regular.otf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ruberoid';
+  src: url('/fonts/Ruberoid-Medium.otf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ruberoid';
+  src: url('/fonts/Ruberoid-SemiBold.otf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ruberoid';
+  src: url('/fonts/Ruberoid-Bold.otf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ruberoid';
+  src: url('/fonts/Ruberoid-ExtraBold.otf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Ruberoid', sans-serif;
+  background-color: #1E1E1E;;
+  z-index: -1;
+  
+}
+
+
+body {
+  margin: 0;
+  
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; // предотвратить горизонтальный скролл
+}
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  padding: 0 10px;
+  max-width: 122.5rem;
+  height: 100%;
+  margin-inline: auto;
+  // background-color: #1E1E1E;
+  overflow: hidden;
+  box-sizing: border-box;
+
+  @include respond-to(mobile-portrait) {//0px
+   
+  }
+
+  @include respond-to(mobile) {//320px
+  } 
+
+@include respond-to(mobile-landscape) {//480px
+  }
+
+  @include respond-to(tablet-portrait) {//768px
+  }
+
+@include respond-to(tablet-landscape) {//992px
+  }
+@include respond-to(desktop) {//1200px
+  }
+@include respond-to(large-desktop) {//1600px
+  }
+@include respond-to(tv) {//1920px
+  }
+ 
+}
+
+.main {
+  flex-grow: 1; //прижали футер вниз
+}
+
+@include respond-to(mobile-portrait) {//0px
+  }
+
+  @include respond-to(mobile) {//320px
+  } 
+
+@include respond-to(mobile-landscape) {//480px
+  }
+
+  @include respond-to(tablet-portrait) {//768px
+  }
+
+@include respond-to(tablet-landscape) {//992px
+  }
+@include respond-to(desktop) {//1200px
+  }
+@include respond-to(large-desktop) {//1600px
+  }
+@include respond-to(tv) {//1920px
+  }

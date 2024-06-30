@@ -1,0 +1,200 @@
+@import '../utils/mixinsMobile.scss';
+@import '../base/breakpointsButton.scss';
+
+
+.button-wrapper {
+  position: relative;
+  height: var(--button-height, 57px); // Default height
+    width: var(--button-width, auto); // Default width
+
+    @include respond-to(mobile-portrait) {
+      width: var(--button-width-mobile-portrait, 129px);
+      height: var(--button-height-mobile-portrait, 38px);
+      font-size: var(--button-font-size-mobile-portrait, 11px);
+    }
+
+    @include respond-to(mobile) {
+      width: var(--button-width-mobile, 129px);
+      height: var(--button-height-mobile, 38px);
+       font-size: var(--button-font-size-mobile, 11px);
+    }
+
+    @include respond-to(mobile-landscape) {
+      width: var(--button-width-mobile-landscape, 129px);
+      height: var(--button-height-mobile-landscape, 38px);
+      font-size: var(--button-font-size-mobile-landscape, 11px);
+    }
+
+    @include respond-to(tablet-portrait) {
+      width: var(--button-width-tablet-portrait, 200px);
+      height: var(--button-height-tablet-portrait, 57px);
+      font-size: var(--button-font-size-tablet-portrait, 14px);
+    }
+
+    @include respond-to(tablet-landscape) {
+      width: var(--button-width-tablet-landscape, 200px);
+      height: var(--button-height-tablet-landscape, 57px);
+      font-size: var(--button-font-size-tablet-landscape, 19px);
+    }
+
+    @include respond-to(desktop) {
+      width: var(--button-width-desktop, 200px);
+      height: var(--button-height-desktop, 57px);
+      font-size: var(--button-font-size-desktop, 19px);
+    }
+
+    @include respond-to(large-desktop) {
+      width: var(--button-width-large-desktop, 200px);
+      height: var(--button-height-large-desktop, 57px);
+      font-size: var(--button-font-size-large-desktop, 19px);
+    }
+
+    @include respond-to(tv) {
+      width: var(--button-width-tv, 200px);
+      height: var(--button-height-tv, 57px);
+      font-size: var(--button-font-size-tv, 19px);
+    }
+
+}
+
+.button {
+  position: relative;
+  width: 100%; /* Ширина кнопки */
+  height: 100%; /* Высота кнопки */
+  background: #161617;
+  border: 1.5px solid #2eecc5;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 19px;
+  color: #fff;
+  z-index: 2; /* Помещаем кнопку на передний план */
+  box-shadow: 0 0 38px 0 rgba(46, 236, 197, 0.2);
+  transition: background-color 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba(46, 236, 197, 0.1);
+    z-index: 3;
+  }
+}
+
+.button-border {
+  position: absolute;
+  top: 20px; /* Смещение вниз */
+  left: 16px; /* Смещение вправо */
+  height: var(--button-height, 57px); // Default height
+  width: var(--button-width, auto); // Default width
+  border: 1.5px solid rgba(46, 236, 197, 0.4); /* Цвет рамки с прозрачностью */
+  border-radius: 4px;
+  z-index: 1; /* Помещаем рамку за кнопкой */
+  pointer-events: none; /* Чтобы не мешать кликам */
+  box-sizing: border-box; /* Учитываем рамку внутри размеров */
+  transition: border-color 0.3s, top 0.3s, left 0.3s; /* Плавные переходы для border и позиционирования */
+
+  @include respond-to(mobile-portrait) {
+      width: var(--button-width-mobile-portrait, 129px);
+      height: var(--button-height-mobile-portrait, 38px);
+      font-size: var(--button-font-size-mobile-portrait, 11px);
+      top: 9px; 
+      left: 9px; 
+       position: absolute;
+    }
+    
+
+    @include respond-to(mobile) {
+      width: var(--button-width-mobile, 129px);
+      height: var(--button-height-mobile, 38px);
+       font-size: var(--button-font-size-mobile, 11px);
+       top: 9px; 
+       left: 9px;
+    }
+
+    @include respond-to(mobile-l) {
+      width: var(--button-width-mobile, 129px);
+      height: var(--button-height-mobile, 38px);
+       font-size: var(--button-font-size-mobile, 11px);
+       top: 9px; /* Смещение вниз */
+       left: 9px; /* Смещение вправо */
+    }
+
+    @include respond-to(mobile-landscape) {  //480px
+      width: var(--button-width-mobile-landscape, 129px);
+      height: var(--button-height-mobile-landscape, 38px);
+      font-size: var(--button-font-size-mobile-landscape, 11px);
+      top: 9px;
+       left: 9px; 
+    }
+
+    @include respond-to(tablet-portrait) {
+      width: var(--button-width-tablet-portrait, 200px);
+      height: var(--button-height-tablet-portrait, 57px);
+      font-size: var(--button-font-size-tablet-portrait, 14px);
+      top: 9px; /* Смещение вниз */
+       left: 9px; /* Смещение вправо */
+    }
+    
+
+    @include respond-to(tablet-landscape) {
+      width: var(--button-width-tablet-landscape, 200px);
+      height: var(--button-height-tablet-landscape, 57px);
+      font-size: var(--button-font-size-tablet-landscape, 19px);
+      top: 12px;
+       left: 12px; 
+    }
+
+    @include respond-to(desktop) {
+      width: var(--button-width-desktop, 200px);
+      height: var(--button-height-desktop, 57px);
+      font-size: var(--button-font-size-desktop, 19px);
+      top: 16px;
+       left: 16px; 
+    }
+
+    @include respond-to(large-desktop) {
+      width: var(--button-width-large-desktop, 200px);
+      height: var(--button-height-large-desktop, 57px);
+      font-size: var(--button-font-size-large-desktop, 19px);
+      top: 20px; /* Смещение вниз */
+  left: 16px;
+    }
+
+    @include respond-to(tv) {
+      width: var(--button-width-tv, 200px);
+      height: var(--button-height-tv, 57px);
+      font-size: var(--button-font-size-tv, 19px);
+      top: 20px; /* Смещение вниз */
+  left: 16px;
+    }
+
+}
+
+/* Добавляем стили для рамки при hover */
+.button:hover .button-border {
+  border-color: rgba(46, 236, 197, 0.1); /* Изменяем цвет рамки при наведении */
+  top: 18px; /* Двигаем рамку немного больше вниз */
+  left: 14px; /* Двигаем рамку немного больше вправо */
+}
+
+
+
+
+@include respond-to(mobile-portrait) {//0px
+  }
+
+  @include respond-to(mobile) {//320px
+  } 
+
+@include respond-to(mobile-landscape) {//480px
+  }
+
+  @include respond-to(tablet-portrait) {//768px
+  }
+
+@include respond-to(tablet-landscape) {//992px
+  }
+@include respond-to(desktop) {//1200px
+  }
+@include respond-to(large-desktop) {//1600px
+  }
+@include respond-to(tv) {//1920px
+  }

@@ -1,0 +1,281 @@
+// src/styles/base/_typography.scss
+@import '../utils/mixinsMobile.scss';
+
+body {
+  line-height: 1.6;
+}
+
+// h1, h2, h3, h4, h5, h6 {
+//   font-weight: 400;
+//   font-size: 17px;
+//   line-height: 1.35;
+// }
+
+// p {
+//   margin-bottom: 1rem;
+// }
+
+.hero-title {
+  background: linear-gradient(149.14deg, rgb(181, 254, 239),rgb(46, 236, 197));
+  -webkit-background-clip:
+  text;
+  -webkit-text-fill-color:
+  transparent;
+  background-clip:
+  text;
+  text-fill-color:
+  transparent;
+  font-size: 65px;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: 0%;
+  text-align: left;
+
+  @include respond-to(mobile-portrait) {//0px
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 1.18;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+
+  @include respond-to(mobile) {//320px
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 1.18;
+    letter-spacing: 0%;
+    text-align: left;
+  } 
+  @include respond-to(mobile-m) {//375px
+    font-size: 27px;
+    font-weight: 800;
+    line-height: 1.18;
+    letter-spacing: 0%;
+    text-align: left;
+  } 
+   @include respond-to(mobile-l) {//425px
+    font-size: 27px;
+    font-weight: 800;
+    line-height: 1.18;
+    letter-spacing: 0%;
+    text-align: left;
+  } 
+
+@include respond-to(mobile-landscape) {//480px
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 1.18;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+
+  @include respond-to(tablet-portrait) {//768px
+    font-size:36px;
+    font-weight: 800;
+    line-height: 1.18;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+
+@include respond-to(tablet-landscape) {//992px
+    font-size: 40px;
+  }
+@include respond-to(desktop) {//1200px
+  font-size: 54px;
+  
+  }
+@include respond-to(large-desktop) {//1600px
+   font-size: 65px;
+  }
+@include respond-to(tv) {//1920px
+  }
+
+& span {
+  background: linear-gradient(149.14deg, rgb(181, 254, 239),rgb(46, 236, 197));
+  -webkit-background-clip:
+  text;
+  -webkit-text-fill-color:
+  transparent;
+  background-clip:
+  text;
+  text-fill-color:
+  transparent;
+  font-size: 45px;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: 0%;
+  text-align: left;
+
+  @include respond-to(tablet-landscape) {//992px
+       font-size: 28px;
+      }
+    @include respond-to(desktop) {//1200px
+      font-size: 38px;
+      }
+      @include respond-to(large-desktop) {//1600px
+        font-size: 45px;
+  }
+}
+}
+
+.section-title {
+  background: linear-gradient(149.14deg, rgb(181, 254, 239),rgb(46, 236, 197));
+-webkit-background-clip:
+text;
+-webkit-text-fill-color:
+transparent;
+background-clip:
+text;
+text-fill-color:
+transparent;
+font-size: 55px;
+font-weight: 700;
+line-height: 110.6%;
+letter-spacing: 0%;
+
+@include respond-to(mobile-portrait) {//0px
+  font-size: 26px;
+  text-align: center;
+  }
+
+  @include respond-to(mobile) {//320px
+    font-size: 26px;
+  text-align: center;
+  }
+  
+
+@include respond-to(mobile-landscape) {//480px
+  font-size: 36px;
+  }
+
+  @include respond-to(tablet-portrait) {//768px
+    font-size: 36px;
+  }
+
+@include respond-to(tablet-landscape) {//992px
+  text-align: left;
+  font-size: 36px;
+  }
+@include respond-to(desktop) {//1200px
+  font-size: 40px;
+  }
+@include respond-to(large-desktop) {//1600px
+  font-size: 55px;
+  }
+@include respond-to(tv) {//1920px
+  font-size: 55px;
+  }
+
+
+}
+
+.centered {
+  text-align: center;
+  width: 100vw;
+}
+
+.hero-text {
+  color: rgba(255, 255, 255, 0.65);
+font-size: 22px;
+font-weight: 400;
+line-height: 30px;
+letter-spacing: 0%;
+
+@include respond-to(tablet-portrait) {//768px
+  font-size: 20px;
+  }
+
+@include respond-to(tablet-landscape) {//992px
+  font-size: 22px;
+  }
+  @include respond-to(large-desktop) {//1600px
+  }
+
+}
+
+.section-text {
+color: rgba(255, 255, 255, 0.65);
+font-size: 17px;
+font-weight: 400;
+line-height: 23px;
+letter-spacing: 0%;
+
+@include respond-to(mobile-portrait) {//0px
+  text-align: center;
+  font-size: 12px;
+  }
+
+  @include respond-to(mobile) {//320px
+    text-align: center;
+  } 
+
+@include respond-to(mobile-landscape) {//480px
+  }
+
+  @include respond-to(tablet-portrait) {//768px
+    font-size: 17px;
+  }
+
+@include respond-to(tablet-landscape) {//992px
+   text-align: left;
+  }
+@include respond-to(desktop) {//1200px
+  font-size: 17px;
+  text-align: left;
+  }
+@include respond-to(large-desktop) {//1600px
+  font-size: 17px;
+  text-align: left;
+  }
+@include respond-to(tv) {//1920px
+  font-size: 17px;
+  text-align: left;
+  }
+
+}
+
+
+
+.menu-title {
+  color: rgb(255, 255, 255);
+font-size: 20px;
+font-weight: 400;
+line-height: 27px;
+letter-spacing: 0%;
+list-style: none;
+
+  @include respond-to(tablet-portrait) {//768px
+    font-size: 16px;
+  }
+
+@include respond-to(tablet-landscape) {//992px
+  font-size: 18px;
+  }
+@include respond-to(desktop) {//1200px
+  font-size: 20px;
+  }
+
+}
+
+
+
+@include respond-to(mobile-portrait) {//0px
+  }
+
+  @include respond-to(mobile) {//320px
+  } 
+
+@include respond-to(mobile-landscape) {//480px
+  }
+
+  @include respond-to(tablet-portrait) {//768px
+  }
+
+@include respond-to(tablet-landscape) {//992px
+  }
+@include respond-to(desktop) {//1200px
+  }
+@include respond-to(large-desktop) {//1600px
+  }
+@include respond-to(tv) {//1920px
+  }

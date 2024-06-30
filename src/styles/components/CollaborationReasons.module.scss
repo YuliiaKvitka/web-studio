@@ -1,0 +1,682 @@
+@import '../utils/mixinsMobile.scss';
+
+@keyframes fade-in {
+    from {
+        translate: -25vw;
+        opacity: 0;
+    }
+}
+
+.offer-mobile {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 23px;
+
+  @include respond-to(tablet-portrait) {//768px
+    display: none;
+  }
+
+  &__text {
+    width: 324px;
+    height: 38px;
+    box-sizing: border-box;
+    border: 1.5px solid rgb(32, 140, 118);
+    border-radius: 41px;
+    box-shadow: 0px 0px 38px 0px rgba(46, 236, 197, 0.1);
+    background: rgba(46, 236, 197, 0.04);
+    color: rgb(255, 255, 255);
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 12px;
+
+@include respond-to(mobile-portrait) {//0px
+  width: 100%;
+  gap: 10px;
+}
+  @include respond-to(mobile) {//320px
+    gap: 10px;
+  } 
+@include respond-to(mobile-landscape) {//480px
+  }
+  @include respond-to(tablet-portrait) {//768px
+  }
+@include respond-to(tablet-landscape) {//992px
+  }
+  }
+}
+
+
+.collaboration-reasons {
+
+    &__inner {
+        padding-bottom: 145px;
+        padding-top: 104px;
+        padding-left: 325px;
+        margin-left: 108px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+      
+
+        @include respond-to(mobile-portrait) {//0px
+          padding-inline: 10px;
+          margin-inline:auto;
+          width: 100%;
+          padding-top: 68px;
+          padding-bottom: 18px;
+        }
+
+        @include respond-to(mobile) {//320px
+          margin-inline:auto;
+        } 
+
+        @include respond-to(mobile-landscape) {//480px
+          margin-inline:auto;
+          padding-bottom: 18px;
+          
+
+        }
+
+        @include respond-to(tablet-portrait) {//768px
+          padding-left: 100px;
+          padding-bottom: 0;
+          padding-bottom: 45px;
+        }
+
+        @include respond-to(tablet-landscape) {//992px
+          margin-inline:0;
+          padding-left: 100px;
+          padding-bottom: 145px;
+          }
+        @include respond-to(desktop) {//1200px
+          padding-left: 50px;
+          margin-left: 40px;
+          }
+        @include respond-to(large-desktop) {//1600px
+          padding-left: 200px;
+          margin-left: 80px;
+        }
+        @include respond-to(tv) {//1920px
+          padding-left: 325px;
+          margin-left: 108px;
+          }
+    }
+
+    &__container {
+        display: flex;
+        // justify-content: space-between;
+        gap: 198px;
+        width: 100%;
+
+        @include respond-to(mobile-portrait) {//0px
+          flex-direction: column;
+          gap: 54px;
+          }
+          @include respond-to(mobile) {//320px
+            align-items: center;
+          } 
+        @include respond-to(mobile-landscape) {//480px
+          }
+          @include respond-to(tablet-portrait) {//768px
+          }
+        @include respond-to(tablet-landscape) {//992px
+          flex-direction: row;
+          gap: 15px;
+          margin-bottom: 32px;
+          }
+        @include respond-to(desktop) {//1200px
+          gap: 198px;
+           margin-bottom: 32px;
+          }
+        @include respond-to(large-desktop) {//1600px
+            gap: 198px;
+             margin-bottom: 32px;
+          }
+        @include respond-to(tv) {//1920px
+          margin-bottom: 32px;
+          }
+    }
+
+    &__columnLeft {
+        padding-top: 20px;
+        z-index: 100;
+        width: 672px;
+
+        @include respond-to(mobile-portrait) {//0px
+        padding-top: 0;
+        }
+        @include respond-to(mobile) {//320px
+        } 
+        @include respond-to(mobile-landscape) {//480px
+        }
+        @include respond-to(tablet-portrait) {//768px
+        }
+        @include respond-to(tablet-landscape) {//992px
+          padding-top: 0px;
+          width: 450px;
+          }
+        @include respond-to(desktop) {//1200px
+          width: 480px;
+          }
+        @include respond-to(large-desktop) {//1600px
+          width: 676px;
+          }
+        @include respond-to(tv) {//1920px
+          }
+
+    }
+
+    &__wrapper {
+        border-radius: 6px;
+        width: 400px;
+        height: 400px;
+        box-shadow: 0 0 150px 0 rgba(59, 95, 150, 0.35);
+        background: linear-gradient(140deg, #527791 0%, #325597 51.98%, #193895 92.79%);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-top: 42px;
+        padding-left: 45px;
+
+        @include respond-to(mobile-portrait) {//0px
+          width: 289px;
+          height: 289px;
+          padding-top: 28px;
+          padding-left: 23px;
+        } 
+        @include respond-to(mobile) {//320px
+        } 
+        @include respond-to(mobile-landscape) {//480px
+        }
+        @include respond-to(tablet-portrait) {//768px
+          width: 400px;
+          height: 400px;
+        }
+        @include respond-to(tablet-landscape) {//992px
+          }
+        @include respond-to(desktop) {//1200px
+          }
+        @include respond-to(large-desktop) {//1600px
+          }
+        @include respond-to(tv) {//1920px
+          }
+    }
+
+    &__button {
+      
+      @include respond-to(mobile-portrait) {//0px
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      @include respond-to(mobile) {//320px
+      } 
+      @include respond-to(mobile-landscape) {//480px
+      }
+      @include respond-to(tablet-portrait) {//768px
+      }
+      @include respond-to(tablet-landscape) {//992px
+        }
+      @include respond-to(desktop) {//1200px
+        }
+      @include respond-to(large-desktop) {//1600px
+        }
+      @include respond-to(tv) {//1920px
+      }
+    }
+  }
+
+.section-title {
+max-width: 672px;
+padding-bottom: 44px;
+width: 100%;
+
+  h2 {
+      margin-bottom: 13px;
+  }
+
+  p {
+      &:not(:last-child) {
+        margin-bottom: 13px; /* Отступ между абзацами, кроме последнего */
+      }
+}
+
+@include respond-to(mobile-portrait) {//0px
+padding-bottom: 25px;
+padding-inline:20px;
+  }
+  @include respond-to(mobile) {//320px
+  } 
+@include respond-to(mobile-landscape) {//480px
+  }
+  @include respond-to(tablet-portrait) {//768px
+  }
+@include respond-to(tablet-landscape) {//992px
+  }
+@include respond-to(desktop) {//1200px
+  }
+@include respond-to(large-desktop) {//1600px
+  }
+@include respond-to(tv) {//1920px
+  }
+}
+
+.section__text {
+
+@include respond-to(mobile-portrait) {//0px
+  display: none;
+  }
+  @include respond-to(mobile) {//320px
+    display: none;
+  } 
+@include respond-to(mobile-landscape) {//480px
+  display: none;
+  }
+  @include respond-to(tablet-portrait) {//768px
+  }
+@include respond-to(tablet-landscape) {//992px
+  display: block;
+  text-align: left;
+  width: 440px;
+  }
+@include respond-to(desktop) {//1200px
+  }
+@include respond-to(large-desktop) {//1600px
+  }
+@include respond-to(tv) {//1920px
+  }
+
+}
+
+.section__text-mobile {
+  max-width: 300px;
+  margin-inline: auto;
+
+
+  @include respond-to(mobile-portrait) {//0px
+    font-size: 12px;
+  }
+
+  @include respond-to(mobile) {//320px
+  } 
+
+@include respond-to(mobile-landscape) {//480px
+  font-size: 14px;
+  max-width: 400px;
+  }
+
+  @include respond-to(tablet-portrait) {//768px
+    font-size: 17px;
+    max-width: 700px;
+  }
+
+@include respond-to(tablet-landscape) {//992px
+  display: none;
+  }
+@include respond-to(desktop) {//1200px
+  }
+@include respond-to(large-desktop) {//1600px
+  }
+@include respond-to(tv) {//1920px
+  }
+
+}
+// ------------------------
+.scroll-button {
+  position: relative;
+  left: 106px;
+
+  @include respond-to(mobile-portrait) {//0px
+    display: none;
+  }
+  @include respond-to(mobile) {//320px
+    display: none;
+  } 
+  @include respond-to(mobile-landscape) {//480px
+    display: none;
+    }
+
+  @include respond-to(tablet-portrait) {//768px
+    display: block;
+    left: -20px;
+  }
+  @include respond-to(tablet-landscape) {//992px
+    }
+  @include respond-to(desktop) {//1200px
+     left: 0px;
+    }
+  @include respond-to(large-desktop) {//1600px
+     left: 80px;
+    }
+  @include respond-to(tv) {//1920px
+    left: 106px;
+    }
+}
+
+.line-button {
+  position: relative;
+  left: -467px;
+  top: 525px;
+  width: 1062px;
+  height: 1px;
+  transform: rotate(90deg);
+  background: linear-gradient(
+    90deg,
+    rgba(46, 236, 197, 0) 0%,
+    rgba(46, 236, 197, 1) 50%,
+    rgba(46, 236, 197, 1) 50%,
+    rgba(46, 236, 197, 0) 100%
+  );
+
+@include respond-to(tablet-portrait) {//768px
+    top: 640px;
+    }
+}
+
+.small-button-2 {
+  position: relative;
+  left: 56px;
+  top: 306px;
+  z-index: 10;
+
+  @include respond-to(tablet-portrait) {//768px
+    left: 56px;
+  top: 194px;
+    }
+
+    @include respond-to(desktop) {//1200px
+       top: 230px;
+      }
+
+  &::before {
+    content: '02';
+    position: absolute;
+    top: 50%;
+    left: -40px; /* Добавляем расстояние в 14px от кнопки */
+    transform: translateY(-50%);
+    background: linear-gradient(149.14deg, rgb(181, 254, 239), rgb(46, 236, 197));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    font-family: Ruberoid;
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 35px;
+    letter-spacing: 0%;
+    z-index: 10;
+
+    @include respond-to(tablet-portrait) {//768px
+      font-size: 18px;
+      left:-32px;
+    }
+    @include respond-to(tablet-landscape) {//992px
+      font-size: 25px;
+      left: -40px;
+      }
+    @include respond-to(desktop) {//1200px
+      }
+    @include respond-to(large-desktop) {//1600px
+      }
+    @include respond-to(tv) {//1920px
+      }
+    }
+}
+
+.small-button-3 {
+  position: relative;
+  left: 56px;
+  top: 936px;
+  z-index: 10;
+
+  &::before {
+    content: '03';
+    position: absolute;
+    top: 50%;
+    left: -40px; /* Добавляем расстояние в 14px от кнопки */
+    transform: translateY(-50%);
+    background:  linear-gradient(180deg, #5d7c76 0%, #0a3028 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    font-family: Ruberoid;
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 35px;
+    letter-spacing: 0%;
+    z-index: 10;
+
+    @include respond-to(tablet-portrait) {//768px
+    font-size: 18px;
+    left: -32px;
+    }
+     @include respond-to(tablet-landscape) {//992px
+  font-size: 25px;
+  left: -40px;
+  }
+  }
+}
+
+.small-button-4 {
+  position: relative;
+  left: 56px;
+  top: 964px;
+  z-index: 10;
+
+  &::before {
+    content: '04';
+    position: absolute;
+    top: 50%;
+    left: -40px; /* Добавляем расстояние в 14px от кнопки */
+    transform: translateY(-50%);
+    background:  linear-gradient(180deg, #5d7c76 0%, #0a3028 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    font-family: Ruberoid;
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 35px;
+    letter-spacing: 0%;
+    z-index: 10;
+
+    @include respond-to(tablet-portrait) {//768px
+    font-size: 18px;
+    left: -32px;
+    }
+    @include respond-to(tablet-landscape) {//992px
+   font-size: 25px;
+   left: -40px;
+  }
+  }
+}
+
+.small-button-5 {
+  position: relative;
+  left: 56px;
+  top: 986px;
+  z-index: 10;
+
+  &::before {
+    content: '05';
+    position: absolute;
+    top: 50%;
+    left: -40px; /* Добавляем расстояние в 14px от кнопки */
+    transform: translateY(-50%);
+    background:  linear-gradient(180deg, #5d7c76 0%, #0a3028 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    font-family: Ruberoid;
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 35px;
+    letter-spacing: 0%;
+    z-index: 10;
+
+    @include respond-to(tablet-portrait) {//768px
+    font-size: 18px;
+    left: -32px;
+    }
+    @include respond-to(tablet-landscape) {//992px
+  font-size: 25px;
+  left: -40px; 
+  }
+  }
+}
+
+.section-line-bottom {
+  position: relative;
+  bottom: 2px;
+  width: 1920px;
+height: 5px;
+background: linear-gradient(135.00deg, rgba(42, 188, 158, 0) 0%,rgb(42, 188, 158) 48.646%,rgba(42, 188, 158, 0) 100%);
+}
+
+.card {
+  padding-inline:23px;
+  
+  &__caption {
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 1.231;
+        color: #fff;
+        text-align: left;
+        margin-bottom: 20px;
+
+        @include respond-to(mobile-portrait) {//0px
+          font-size: 22px;
+          margin-bottom: 6px;
+          width: 158px;
+        }
+        @include respond-to(mobile) {//320px
+          font-size: 22px;
+          margin-bottom: 6px;
+        } 
+        @include respond-to(mobile-landscape) {//480px
+          font-size: 24px;
+          margin-bottom: 6px;
+        }
+        @include respond-to(tablet-portrait) {//768px
+          font-size: 26px;
+        }
+        @include respond-to(tablet-landscape) {//992px
+           font-size: 26px;
+          }
+        @include respond-to(desktop) {//1200px
+          }
+        @include respond-to(large-desktop) {//1600px
+          }
+        @include respond-to(tv) {//1920px
+          }
+    }
+
+    &__text {
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 1.231;
+        color: rgba(255, 255, 255, 0.9);
+
+        @include respond-to(mobile-portrait) {//0px
+          font-size: 12px;
+        }
+        @include respond-to(mobile) {//320px
+            font-size: 12px;
+        } 
+        @include respond-to(mobile-landscape) {//480px
+          font-size: 14px;
+        }
+        @include respond-to(tablet-portrait) {//768px
+          font-size: 17px;
+        }
+        @include respond-to(tablet-landscape) {//992px
+          font-size: 17px;
+          }
+        @include respond-to(desktop) {//1200px
+          font-size: 17px;
+          }
+        @include respond-to(large-desktop) {//1600px
+          font-size: 17px;
+          }
+        @include respond-to(tv) {//1920px
+          font-size: 17px;
+          }
+    }
+
+    &__image {
+        display: flex;
+        justify-content: flex-end;
+
+        & img{
+
+        @include respond-to(mobile-portrait) {//0px
+        width: 158px;
+        height: 139px;
+        }
+        @include respond-to(mobile) {//320px
+          width: 158px;
+        height: 139px;
+        } 
+        @include respond-to(mobile-landscape) {//480px
+             width: 158px;
+        height: 139px;
+        }
+        @include respond-to(tablet-portrait) {//768px
+          width: 211px;
+          height: 211px;
+        }
+        @include respond-to(tablet-landscape) {//992px
+          width: 211px;
+          height: 211px;
+          }
+        @include respond-to(desktop) {//1200px
+          width: 211px;
+          height: 211px;
+          }
+        @include respond-to(large-desktop) {//1600px
+          width: 211px;
+          height: 211px;
+          }
+        @include respond-to(tv) {//1920px
+          width: 211px;
+          height: 211px;
+          }
+      }
+}
+}
+
+
+
+
+// =====================================
+
+@include respond-to(mobile-portrait) {//0px
+  }
+
+  @include respond-to(mobile) {//320px
+  } 
+
+@include respond-to(mobile-landscape) {//480px
+  }
+
+  @include respond-to(tablet-portrait) {//768px
+  }
+
+@include respond-to(tablet-landscape) {//992px
+  }
+@include respond-to(desktop) {//1200px
+  }
+@include respond-to(large-desktop) {//1600px
+  }
+@include respond-to(tv) {//1920px
+  }

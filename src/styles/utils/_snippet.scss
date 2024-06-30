@@ -1,0 +1,21 @@
+.ha-clickable-area {
+    position: var(--ha-clickable-area-position, relative);
+    isolation: isolate;
+    }
+
+    .ha-clickable-area::before {
+    content: "";
+    position: absolute;
+    inset: calc(-1 * var(--ha-clickable-area-expandable-ratio));
+    z-index: -1;
+    }
+
+
+    // ----------------
+
+    .page__back-to-home {
+    --ha-clickable-area-expandable-ratio: 0.75rem; /* 12px */
+
+    width: 2rem;
+    height: 2rem; 
+}

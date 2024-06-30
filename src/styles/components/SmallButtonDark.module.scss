@@ -1,0 +1,51 @@
+@import '../utils/mixinsMobile.scss';
+
+.small-button {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    border-radius: 20px;
+    width: 18px;
+    height: 37px;
+    background: linear-gradient(180deg, #5d7c76 0%, #0a3028 100%);
+    outline: 1px solid transparent; /* Создаем отступ в 1 пиксель */
+
+    @include respond-to(tablet-portrait) {//768px
+      width: 12px;
+      height: 24px;
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        top: -3px;
+        left: -3px;
+        width: calc(100% + 6px);
+        height: calc(100% + 6px);
+        background:  linear-gradient(180deg, #5d7c76 0%, #0a3028 100%);
+        border-radius: 23px; /* Радиус кнопки + отступ */
+        z-index: -1; /* Чтобы псевдоэлемент находился под кнопкой */
+        box-sizing: border-box;
+    }
+}
+
+
+// @include respond-to(mobile-portrait) {//0px
+//   }
+
+//   @include respond-to(mobile) {//320px
+//   } 
+
+// @include respond-to(mobile-landscape) {//480px
+//   }
+
+//   @include respond-to(tablet-portrait) {//768px
+//   }
+
+// @include respond-to(tablet-landscape) {//992px
+//   }
+// @include respond-to(desktop) {//1200px
+//   }
+// @include respond-to(large-desktop) {//1600px
+//   }
+// @include respond-to(tv) {//1920px
+//   }

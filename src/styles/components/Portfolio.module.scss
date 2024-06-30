@@ -1,0 +1,538 @@
+@import '../utils/mixinsMobile.scss';
+
+.line-button {
+    position: relative;
+    left: -467px;
+    top: 50px;
+    width: 1062px;
+    height: 1px;
+    transform: rotate(90deg);
+    background: linear-gradient(
+        90deg,
+        rgba(46, 236, 197, 0) 0%,
+        rgba(46, 236, 197, 1) 50%,
+        rgba(46, 236, 197, 1) 50%,
+        rgba(46, 236, 197, 0) 100%
+    );
+
+    @include respond-to(mobile-portrait) {//0px
+  }
+
+  @include respond-to(mobile) {//320px
+  } 
+
+@include respond-to(mobile-landscape) {//480px
+  }
+
+  @include respond-to(tablet-portrait) {//768px
+     top: 250px
+  }
+
+@include respond-to(tablet-landscape) {//992px
+  top: 250px
+  }
+@include respond-to(desktop) {//1200px
+    top: 425px;
+  }
+@include respond-to(large-desktop) {//1600px
+    top: 425px;
+  }
+@include respond-to(tv) {//1920px
+    top: 286px;
+  }
+}
+.scroll-button {
+    position: relative;
+    left: 106px;
+
+    
+     @include respond-to(mobile-portrait) {//0px
+      display: none;
+  }
+
+  @include respond-to(mobile) {//320px
+  } 
+
+@include respond-to(mobile-landscape) {//480px
+  display: none;
+  }
+
+  @include respond-to(tablet-portrait) {//768px
+    display: block;
+    left: -20px;
+  }
+
+@include respond-to(tablet-landscape) {//992px
+  }
+@include respond-to(desktop) {//1200px
+     left: 0px;
+  }
+@include respond-to(large-desktop) {//1600px
+    left: 80px;
+  }
+@include respond-to(tv) {//1920px
+    left: 106px;
+  }
+}
+
+.small-button-3 {
+    position: relative;
+    left: 56px;
+    top: 30px;
+    z-index: 10;
+
+    @include respond-to(mobile-portrait) {//0px
+  }
+
+  @include respond-to(mobile) {//320px
+  } 
+
+@include respond-to(mobile-landscape) {//480px
+  }
+
+  @include respond-to(tablet-portrait) {//768px
+    top: 88px;
+  }
+
+@include respond-to(tablet-landscape) {//992px
+  top: 160px;
+  }
+@include respond-to(desktop) {//1200px
+  top: 136px;
+  }
+@include respond-to(large-desktop) {//1600px
+    top: 140px;
+  }
+@include respond-to(tv) {//1920px
+    top: 150px;
+  }
+
+&::before {
+    content: '03';
+    position: absolute;
+    top: 50%;
+    left: -40px; /* Добавляем расстояние в 14px от кнопки */
+    transform: translateY(-50%);
+    background: linear-gradient(149.14deg, rgb(181, 254, 239), rgb(46, 236, 197));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    font-family: Ruberoid;
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 35px;
+    letter-spacing: 0%;
+    z-index: 10;
+}
+
+@include respond-to(mobile-portrait) {//0px
+  }
+
+  @include respond-to(mobile) {//320px
+  } 
+
+@include respond-to(mobile-landscape) {//480px
+  }
+
+  @include respond-to(tablet-portrait) {//768px
+  }
+
+@include respond-to(tablet-landscape) {//992px
+  }
+@include respond-to(desktop) {//1200px
+  }
+@include respond-to(large-desktop) {//1600px
+  }
+@include respond-to(tv) {//1920px
+  }
+}
+
+.small-button-4 {
+    position: relative;
+    left: 56px;
+    top: 354px;
+    z-index: 10;
+
+    @include respond-to(mobile-portrait) {//0px
+  }
+
+  @include respond-to(mobile) {//320px
+  } 
+
+@include respond-to(mobile-landscape) {//480px
+  }
+
+  @include respond-to(tablet-portrait) {//768px
+    top: 580px;
+  }
+
+@include respond-to(tablet-landscape) {//992px
+   top:376px;
+
+  }
+@include respond-to(desktop) {//1200px
+  }
+@include respond-to(large-desktop) {//1600px
+    top: 450px;
+  }
+@include respond-to(tv) {//1920px
+    top: 468px;
+  }
+
+&::before {
+    content: '04';
+    position: absolute;
+    top: 50%;
+    left: -40px; /* Добавляем расстояние в 14px от кнопки */
+    transform: translateY(-50%);
+    background:  linear-gradient(180deg, #5d7c76 0%, #0a3028 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    font-family: Ruberoid;
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 35px;
+    letter-spacing: 0%;
+    z-index: 10;
+}
+}
+
+.small-button-5 {
+    position: relative;
+    left: 56px;
+    top: 374px;
+    z-index: 10;
+
+    @include respond-to(mobile-portrait) {//0px
+  }
+
+  @include respond-to(mobile) {//320px
+  } 
+
+@include respond-to(mobile-landscape) {//480px
+  }
+
+  @include respond-to(tablet-portrait) {//768px
+    top: 600px;
+  }
+
+@include respond-to(tablet-landscape) {//992px
+  top: 400px;
+  }
+@include respond-to(desktop) {//1200px
+  }
+@include respond-to(large-desktop) {//1600px
+    top: 470px;
+  }
+@include respond-to(tv) {//1920px
+    top: 490px;
+  }
+
+&::before {
+    content: '05';
+    position: absolute;
+    top: 50%;
+    left: -40px; /* Добавляем расстояние в 14px от кнопки */
+    transform: translateY(-50%);
+    background:  linear-gradient(180deg, #5d7c76 0%, #0a3028 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    font-family: Ruberoid;
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 35px;
+    letter-spacing: 0%;
+    z-index: 10;
+}
+}
+
+.section-line-bottom {
+    position: relative;
+    top: 0;
+    width: 1920px;
+    height: 5px;
+    background: linear-gradient(135.00deg, rgba(42, 188, 158, 0) 0%,rgb(42, 188, 158) 48.646%,rgba(42, 188, 158, 0) 100%);
+}
+
+// ----------------------------
+.portfolio {
+
+     &__inner {
+        padding-top: 145px;
+        padding-bottom: 120px;
+        margin-top: -127px;
+        width: 1276px;
+        margin-left: 325px;
+        padding-left: 325px;
+        margin-left: 108px;
+
+        @include respond-to(mobile-portrait) {//0px
+           padding-inline: 10px;
+          margin-inline:auto;
+          width: 100%;
+          padding-top: 140px;
+  }
+
+  @include respond-to(mobile) {//320px
+  } 
+
+@include respond-to(mobile-landscape) {//480px
+    margin-inline:auto;
+    padding-bottom: 18px;
+
+  }
+
+  @include respond-to(tablet-portrait) {//768px
+    padding-left: 100px;
+    padding-top: 100px;
+          padding-bottom: 145px;
+  }
+
+@include respond-to(tablet-landscape) {//992px
+  margin-inline:0;
+          padding-left: 100px;
+          padding-top: 145px;
+          padding-bottom: 60px;
+
+          
+  }
+@include respond-to(desktop) {//1200px
+    padding-left: 50px;
+    margin-left: 40px;
+  }
+@include respond-to(large-desktop) {//1600px
+    padding-left: 200px;
+    margin-left: 80px;
+  }
+@include respond-to(tv) {//1920px
+      padding-left: 325px;
+        margin-left: 108px;
+  }
+    }
+    &__container {
+        display: flex;
+        gap: 111px;
+
+         @include respond-to(mobile-portrait) {//0px
+          flex-wrap: wrap;
+   gap: 42px;
+  }
+
+  @include respond-to(mobile) {//320px
+  } 
+
+@include respond-to(mobile-landscape) {//480px
+   flex-wrap: wrap;
+   gap: 42px;
+  }
+
+  @include respond-to(tablet-portrait) {//768px
+    flex-wrap: wrap;
+  }
+
+@include respond-to(tablet-landscape) {//992px
+   gap:0px;
+   flex-wrap: nowrap;
+  }
+@include respond-to(desktop) {//1200px
+    gap:0px;
+    
+  }
+@include respond-to(large-desktop) {//1600px
+    flex-direction: row;
+   gap:40px;
+  }
+@include respond-to(tv) {//1920px
+    gap: 111px;
+}
+    }
+
+    &__columnLeft {
+        padding-top: 20px;
+        z-index: 100;
+    }
+
+    &__button {
+        padding-left: 20px;
+        padding-top: 20px;
+
+        @include respond-to(mobile-portrait) {//0px
+           display: flex;
+          justify-content: center;
+  }
+   
+
+  @include respond-to(mobile) {//320px
+    
+
+@include respond-to(mobile-landscape) {//480px
+   flex-wrap: wrap;
+  }
+
+  @include respond-to(tablet-portrait) {//768px
+    
+  }
+  @include respond-to(tablet-landscape) {//992px
+    flex-wrap: wrap;
+    display: block;
+  }
+  
+  }
+    }
+    &__columnRight {
+        margin-top: -50px;
+        z-index: 10;
+    }
+    &__wrapper {
+        border-radius: 6px;
+        width: 400px;
+        height: 400px;
+        box-shadow: 0 0 150px 0 rgba(59, 95, 150, 0.35);
+        background: linear-gradient(140deg, #527791 0%, #325597 51.98%, #193895 92.79%);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-top: 42px;
+        padding-left: 45px;
+    }
+
+    &__image {
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__caption {
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 1.231;
+        color: #fff;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 1.231;
+        color: rgba(255, 255, 255, 0.9);
+        width: 305px;
+    }
+
+    &__list {
+        margin-top: 32px;
+        display: flex;
+        justify-content: space-between;
+        gap: 35px;
+        width: 100%;
+        width: 1276px;
+    }
+
+    &__item {
+        padding-top: 44px;
+        padding-left: 37px;
+        border-radius: 6px;
+        min-width: 400px;
+        min-height: 400px;
+        box-shadow: 0 0 80px 0 rgba(44, 44, 45, 0.35);
+        background: linear-gradient(140deg, #303134 0%, #282828 51.98%, #282828 92.79%);
+        z-index: 10;
+        position: relative;
+        box-sizing: border-box;
+    }
+
+    &__caption {
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 1.231;
+        color: #fff;
+        width: 258px;
+    }
+
+    &__text {
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 1.231;
+        color: rgba(255, 255, 255, 0.9);
+        width: 344px;
+    }
+
+    &__image {
+        margin-top: 20px;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+}
+
+.section-title {
+width: 550px;
+padding-bottom: 41px;
+
+    h2 {
+        margin-bottom: 13px;
+    }
+
+    p {
+        &:not(:last-child) {
+        margin-bottom: 13px; /* Отступ между абзацами, кроме последнего */
+        }
+    }
+
+    @include respond-to(mobile-portrait) {//0px
+      padding-bottom: 25px;
+      padding-inline:20px;
+      margin-top: 118px;
+      width: 100%;
+  }
+  @include respond-to(mobile) {//320px
+    padding-bottom: 25px;
+padding-inline:20px;
+width: 100%;
+  } 
+@include respond-to(mobile-landscape) {//480px
+ margin-top: 118px;
+  }
+  @include respond-to(tablet-portrait) {//768px
+    padding-top: 0;
+    margin-top: 0;
+    
+  }
+@include respond-to(tablet-landscape) {//992px
+   width: 323px;
+  }
+@include respond-to(desktop) {//1200px
+    width: 440px;
+  }
+@include respond-to(large-desktop) {//1600px
+    width: 550px;
+  }
+@include respond-to(tv) {//1920px
+  }
+
+}
+
+
+@include respond-to(mobile-portrait) {//0px
+  }
+
+  @include respond-to(mobile) {//320px
+  } 
+
+@include respond-to(mobile-landscape) {//480px
+  }
+
+  @include respond-to(tablet-portrait) {//768px
+  }
+
+@include respond-to(tablet-landscape) {//992px
+  }
+@include respond-to(desktop) {//1200px
+  }
+@include respond-to(large-desktop) {//1600px
+  }
+@include respond-to(tv) {//1920px
+  }

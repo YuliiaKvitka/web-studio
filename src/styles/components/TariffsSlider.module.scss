@@ -1,0 +1,412 @@
+@import '../utils/mixinsMobile.scss';
+
+
+.slider-container {
+  text-align: center;
+  background-color: transparent;
+  border-radius: 10px;
+  display: flex;
+  // justify-content: center;
+  z-index: 10;
+
+  @include respond-to(mobile-portrait) {//0px
+    justify-content: flex-start;
+  }
+
+  @include respond-to(mobile) {//320px
+  } 
+
+@include respond-to(mobile-landscape) {//480px
+  }
+
+  @include respond-to(tablet-portrait) {//768px
+  }
+
+@include respond-to(tablet-landscape) {//992px
+  }
+@include respond-to(desktop) {//1200px
+  }
+@include respond-to(large-desktop) {//1600px
+  }
+@include respond-to(tv) {//1920px
+  }
+}
+
+.slider {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+   justify-content: center;
+  z-index: 10;
+  max-width: 100%;
+  overflow: hidden;
+  left: 460px;
+@include respond-to(mobile-portrait) {//0px
+     left: 0px;
+  }
+
+  @include respond-to(mobile) {//320px
+  } 
+
+@include respond-to(mobile-landscape) {//480px
+  left: 0px;
+  }
+
+  @include respond-to(tablet-portrait) {//768px
+    left: 26px;
+    
+  }
+
+@include respond-to(tablet-landscape) {//992px
+  left: 26px;
+  }
+@include respond-to(desktop) {//1200px
+  left: 26px;
+  }
+@include respond-to(large-desktop) {//1600px
+  left: 217px;
+  }
+@include respond-to(tv) {//1920px
+  left: 460px;
+  }
+  
+}
+
+.slider-wrapper {
+  width: 100%;
+ max-width: 1094px;
+}
+
+.slider-content {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+  padding-top:109px;
+  padding-bottom: 70px;
+
+  @include respond-to(mobile-portrait) {//0px
+    gap: 20px;
+    padding-left: 0px;
+    padding-bottom: 145px;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 27px;
+  }
+
+  @include respond-to(mobile) {//320px
+  } 
+
+@include respond-to(mobile-landscape) {//480px
+   padding-left: 0px;
+   padding-bottom: 100px;
+   justify-content: start;
+  }
+
+  @include respond-to(tablet-portrait) {//768px
+    padding-left: 120px;
+  }
+
+@include respond-to(tablet-landscape) {//992px
+  gap: 20px;
+  justify-content: start;
+  }
+@include respond-to(desktop) {//1200px
+ padding-left:120px;
+ 
+  gap: 20px;
+
+  }
+  
+@include respond-to(large-desktop) {//1600px
+  padding-left: 0;
+  justify-content: center;
+  width: 100%;
+  padding-right: 120px;
+  gap: 35px;
+  }
+@include respond-to(tv) {//1920px
+  }
+  
+}
+
+.slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 295px;
+  height: 411px;
+  padding: 37px 18px 19px 18px;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 36px;
+  background: linear-gradient(218.91deg, rgba(49, 49, 52, 0.7) 9.282%,rgba(44, 44, 45, 0.7) 43.912%,rgba(41, 41, 41, 0.7) 87.769%);
+   transition: transform .3s ease-in-out;
+   margin: 0;
+
+   @include respond-to(mobile-portrait) {//0px
+    width: 280px;
+  height: 390px;
+  }
+
+  @include respond-to(mobile) {//320px
+  } 
+
+@include respond-to(mobile-landscape) {//480px
+  }
+
+  @include respond-to(tablet-portrait) {//768px
+    width: 295px;
+  height: 411px;
+  }
+
+@include respond-to(tablet-landscape) {//992px
+  }
+@include respond-to(desktop) {//1200px
+  }
+@include respond-to(large-desktop) {//1600px
+  }
+@include respond-to(tv) {//1920px
+  }
+  
+   cursor: pointer;
+
+    &:hover {
+    transform: scale(1.25);
+    .slide__title,
+    .slide__text,
+    .slide__tariff{
+        color: white; 
+      }
+}
+
+  &__title {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-bottom: 21px;
+    
+@include respond-to(mobile-portrait) {//0px
+  font-size: 20px;
+  margin-bottom: 10px;
+  }
+
+  @include respond-to(mobile) {//320px
+  } 
+
+@include respond-to(mobile-landscape) {//480px
+  }
+
+  @include respond-to(tablet-portrait) {//768px
+    font-size: 26px;
+  }
+
+@include respond-to(tablet-landscape) {//992px
+  }
+@include respond-to(desktop) {//1200px
+  }
+@include respond-to(large-desktop) {//1600px
+  }
+@include respond-to(tv) {//1920px
+  }
+}
+
+&__text {
+  color: rgba(255, 255, 255, 0.3);
+font-size: 12px;
+font-weight: 400;
+line-height: 1.58;
+letter-spacing: 0%;
+text-align: center;
+padding-inline: 12px;
+    
+@include respond-to(mobile-portrait) {//0px
+ 
+  
+  }
+
+  @include respond-to(mobile) {//320px
+  } 
+
+@include respond-to(mobile-landscape) {//480px
+  }
+
+  @include respond-to(tablet-portrait) {//768px
+  }
+
+@include respond-to(tablet-landscape) {//992px
+  }
+@include respond-to(desktop) {//1200px
+  }
+@include respond-to(large-desktop) {//1600px
+  }
+@include respond-to(tv) {//1920px
+  }
+}
+
+&__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+&__price {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+&__tariff {
+  color: rgba(255, 255, 255, 0.6);
+font-size: 16px;
+font-weight: 400;
+line-height: 1;
+letter-spacing: 0%;
+text-align: left;
+}
+
+&__deadline {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+
+  }
+
+.prev-arrow, .next-arrow {
+  outline: 3px solid rgb(44, 142, 122);
+  background: linear-gradient(165.81deg, rgb(25, 32, 31) 16.333%,rgb(50, 57, 57) 90%);
+  width: 70px;
+  aspect-ratio: 1;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  font-size: 2rem;
+  padding: 10px;
+  cursor: pointer;
+  position: absolute;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.prev-arrow {
+  left: 6px;
+  z-index: 10;
+  top: 52%;
+
+  
+@include respond-to(mobile-portrait) {//0px
+   left: 50px;
+  top: 500px;
+  }
+
+  @include respond-to(mobile) {//320px
+  } 
+
+@include respond-to(mobile-landscape) {//480px
+  left: 120px;
+  top: 479px;
+  }
+
+  @include respond-to(tablet-portrait) {//768px
+    left: 224px;
+     top: 500px;
+  }
+
+@include respond-to(tablet-landscape) {//992px
+  }
+@include respond-to(desktop) {//1200px
+  left: 77px;
+   top: 236px;
+  }
+@include respond-to(large-desktop) {//1600px
+  left: 21px;
+  }
+@include respond-to(tv) {//1920px
+  left:13px;
+  }
+
+    & svg {
+    stroke:rgb(44, 142, 122);
+    fill:rgb(44, 142, 122);
+    width: 30px;
+    height: 30px;
+    }
+}
+
+.next-arrow {
+  right: 6px;
+  top: 40%;
+  rotate: 180deg;
+  z-index: 100;
+
+  @include respond-to(mobile-portrait) {//0px
+    right: 875px;
+  top: 430px;
+  }
+
+  @include respond-to(mobile) {//320px
+  } 
+
+@include respond-to(mobile-landscape) {//480px
+  right: 763px;
+  top: 409px;
+  }
+
+  @include respond-to(tablet-portrait) {//768px
+    right: 524px;
+    top: 428px;
+  }
+
+@include respond-to(tablet-landscape) {//992px
+  right: 526px;
+  }
+@include respond-to(desktop) {//1200px
+  justify-content: center;
+  right: 4px;
+  top: 170px;
+  }
+@include respond-to(large-desktop) {//1600px
+  right:32px;
+  }
+@include respond-to(tv) {//1920px
+  }
+
+    & svg {
+        stroke:rgb(44, 142, 122);
+        fill:rgb(44, 142, 122);
+        width: 30px;
+        height: 30px;
+      }
+}
+
+
+@include respond-to(mobile-portrait) {//0px
+  }
+
+  @include respond-to(mobile) {//320px
+  } 
+
+@include respond-to(mobile-landscape) {//480px
+  }
+
+  @include respond-to(tablet-portrait) {//768px
+  }
+
+@include respond-to(tablet-landscape) {//992px
+  }
+@include respond-to(desktop) {//1200px
+  }
+@include respond-to(large-desktop) {//1600px
+  }
+@include respond-to(tv) {//1920px
+  }

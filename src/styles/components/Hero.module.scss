@@ -1,0 +1,765 @@
+@import '../utils/mixinsMobile.scss';
+
+.hero {
+  height: 100%;
+
+
+  &__inner {
+    padding-left: 325px;
+    margin-left: 108px;
+    display: flex;
+    gap: 91px;
+    animation: fadeIn 1s forwards ease-in-out; /* Анимация для всего блока .hero__inner */
+
+    @include respond-to(mobile-portrait) {//0px
+      padding-inline: 10px;
+      gap: 0;
+      padding-top: 100px;
+      margin-left: 0;
+    }
+
+    @include respond-to(mobile) {//320px
+      padding-inline: 10px;
+      gap: 0;
+      padding-top: 124px;
+    }
+
+    @include respond-to(mobile-landscape) {//480px
+      padding-inline: 10px;
+      gap: 0;
+      padding-top: 124px;
+      margin-left: 0;
+    }
+
+    @include respond-to(tablet-portrait) {//768px
+      gap: 50px;
+      padding-left: 100px;
+      padding-top: 0px;
+    }
+
+    @include respond-to(tablet-landscape) {//992px
+      }
+    @include respond-to(desktop) {//1200px
+        gap: 60px;
+        padding-left: 70px;
+        margin-left: 40px;
+      }
+    @include respond-to(large-desktop) {//1600px
+      padding-left: 200px;
+    margin-left: 80px;
+      }
+    @include respond-to(tv) {//1920px
+      padding-left: 325px;
+    margin-left: 108px;
+    }
+  }
+
+  &__title {
+    margin-top: 124px;
+    width: 817px;
+    margin-bottom: 78px;
+
+    @include respond-to(mobile-portrait) {//0px
+      width: 228px;
+      margin-bottom: 21px;
+      margin-top: 0;
+  }
+
+  @include respond-to(mobile) {//320px
+      width: 228px;
+      margin-bottom: 21px;
+      margin-top: 0;
+  } 
+
+@include respond-to(mobile-landscape) {//480px
+      width: 228px;
+      margin-bottom: 21px;
+      margin-top: 0px;
+
+  }
+
+  @include respond-to(tablet-portrait) {//768px
+      margin-top: 0px;
+      width: 350px;
+      margin-bottom: 78px;
+
+  }
+
+@include respond-to(tablet-landscape) {//992px
+   margin-top: 124px;
+    width: 817px;
+    margin-bottom: 78px;
+  }
+@include respond-to(desktop) {//1200px
+  }
+@include respond-to(large-desktop) {//1600px
+  }
+@include respond-to(tv) {//1920px
+  }
+
+
+  }
+
+  &__titleText {
+    opacity: 0;
+    animation: fadeIn 1s forwards ease-in-out; /* Анимация для заголовка h1 */
+
+    & span{
+      background: linear-gradient(149.14deg, rgb(181, 254, 239),rgb(46, 236, 197));
+      -webkit-background-clip:
+      text;
+      -webkit-text-fill-color:
+      transparent;
+      background-clip:
+      text;
+      text-fill-color:
+      transparent;
+      font-size: 45px;
+      font-weight: 800;
+      line-height: 1;
+      letter-spacing: 0%;
+      text-align: left;
+
+    @include respond-to(mobile-portrait) {//0px
+      display: none;
+    }
+
+    @include respond-to(mobile) {//320px
+      display: none;
+    } 
+
+    @include respond-to(mobile-landscape) {//480px
+      display: none;
+    }
+
+    @include respond-to(tablet-portrait) {//768px
+      display: none;
+    }
+
+    @include respond-to(tablet-landscape) {//992px
+      display: block;
+      font-size:28px;
+      font-weight: 800;
+      line-height: 1.18;
+      letter-spacing: 0%;
+      text-align: left;
+      }
+    @include respond-to(desktop) {//1200px
+      font-size: 38px;
+      font-weight: 800;
+      line-height: 1;
+      letter-spacing: 0%;
+      text-align: left;
+      }
+    @include respond-to(large-desktop) {//1600px
+      font-size: 45px;
+      }
+    @include respond-to(tv) {//1920px
+    }
+  }
+
+  }
+
+  .hero-title {
+    font-size: 48px; /* Размер шрифта заголовка h1 */
+    line-height: 1.2; /* Межстрочный интервал заголовка h1 */
+    margin-bottom: 20px; /* Отступ снизу заголовка h1 */
+    font-weight: 700; /* Жирность текста заголовка h1 */
+  }
+
+  .hero-text {
+    font-size: 16px; /* Размер шрифта текста */
+    line-height: 1.5; /* Межстрочный интервал текста */
+    margin-bottom: 40px; /* Отступ снизу текста */
+  }
+
+  &__subtitle {
+    color: #ffffff; /* Цвет подзаголовка */
+    font-size: 24px; /* Размер шрифта подзаголовка */
+  }
+
+  &__text {
+    margin-top: 26px;
+    width: 689px;
+
+    @include respond-to(tablet-portrait) {//768px
+        width: 460px;
+        
+      }
+      @include respond-to(tablet-landscape) {//992px
+        width: 506px;
+        }
+  }
+
+  &__textParagraph {
+    opacity: 0;
+    animation: fadeIn 1s forwards ease-in-out; /* Анимация для абзаца текста */
+    animation-delay: 0.5s; /* Задержка для анимации абзаца текста */
+
+    @include respond-to(mobile-portrait) {//0px
+        display: none;
+  }
+
+      @include respond-to(mobile) {//320px
+        display: none;
+      } 
+
+      @include respond-to(mobile-landscape) {//480px
+        display: none;
+      }
+
+      @include respond-to(tablet-portrait) {//768px
+        display: block;
+      }
+
+      @include respond-to(tablet-landscape) {//992px
+        display: block;
+        }
+      @include respond-to(desktop) {//1200px
+        }
+      @include respond-to(large-desktop) {//1600px
+        }
+      @include respond-to(tv) {//1920px
+        }
+
+
+    &-mobile {
+
+      @include respond-to(mobile-portrait) {//0px
+        display: block;
+        width: 218px;
+        font-size: 14px;
+        // margin-bottom: 21px;
+        line-height: 1.2;
+  }
+
+      @include respond-to(mobile) {//320px
+        display: block;
+        width: 230px;
+        font-size: 14px;
+        line-height: 1.2;
+      } 
+
+      @include respond-to(mobile-landscape) {//480px
+        display: block;
+        width: 230px;
+        font-size: 14px;
+        line-height: 1.2;
+      }
+
+      @include respond-to(tablet-portrait) {//768px
+        display: none;
+      }
+
+      @include respond-to(tablet-landscape) {//992px
+        display: none;
+        }
+      @include respond-to(desktop) {//1200px
+        }
+      @include respond-to(large-desktop) {//1600px
+        }
+      @include respond-to(tv) {//1920px
+        }
+
+    }
+  }
+
+  &__button {
+    opacity: 0;
+    animation: slideInLeft 1s forwards ease-in-out; /* Анимация для кнопки */
+    animation-delay: 1s; /* Задержка для анимации кнопки */
+
+    @include respond-to(mobile-portrait) {//0px
+      margin-bottom: 243px;
+  }
+
+  @include respond-to(mobile) {//320px
+    margin-bottom: 243px;
+  } 
+
+@include respond-to(mobile-landscape) {//480px
+  margin-bottom: 243px;
+  }
+
+  @include respond-to(tablet-portrait) {//768px
+    margin-bottom: 0px;
+  }
+
+@include respond-to(tablet-landscape) {//992px
+  }
+@include respond-to(desktop) {//1200px
+  }
+@include respond-to(large-desktop) {//1600px
+  }
+@include respond-to(tv) {//1920px
+  }
+    
+  }
+
+  &__link {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0%;
+    margin-left: 24px;
+    cursor: pointer;
+    opacity: 0;
+    animation: fadeIn 1s forwards ease-in-out; /* Анимация для ссылки */
+    animation-delay: 1.5s; /* Задержка для анимации ссылки */
+
+    @include respond-to(mobile-portrait) {//0px
+      display: none;
+  }
+
+  @include respond-to(mobile) {//320px
+    display: none;
+  } 
+
+@include respond-to(mobile-landscape) {//480px
+  display: none;
+  }
+
+  @include respond-to(tablet-portrait) {//768px
+   display: block;
+   margin-top: 20px;
+   margin-left: 0;
+  }
+
+@include respond-to(tablet-landscape) {//992px
+  display: block;
+  }
+@include respond-to(desktop) {//1200px
+  }
+@include respond-to(large-desktop) {//1600px
+  }
+@include respond-to(tv) {//1920px
+  }
+
+    &:hover {
+      color: rgba(255, 255, 255);
+    }
+  }
+
+&__columnLeft {
+  width: 817px;
+}
+
+  &__columnRight {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  
+  }
+  &__image {
+    position: relative;
+    z-index: 2;
+    right: 110px;
+    height: 100%;
+
+    @include respond-to(mobile-portrait) {//0px
+      width: 250px;
+      height: auto;
+      right: 86px;
+  }
+
+  @include respond-to(mobile) {//320px
+     width: 250px;
+      height: auto;
+      right: 110px;
+  } 
+   @include respond-to(mobile-m) {//375px
+    width: 250px;
+      height: auto;
+      right: 56px;
+  } 
+   @include respond-to(mobile-l) {//425px
+    width: 250px;
+      height: auto;
+      right: 10px;
+  } 
+
+@include respond-to(mobile-landscape) {//480px
+    width: 330px;
+    height: 412px;
+    right: 8px;
+    top: 0px;
+  }
+
+  @include respond-to(tablet-portrait) {//768px
+    width: 400px;
+    right: 50px;
+    height: 100%;
+  }
+
+@include respond-to(tablet-landscape) {//992px
+  width: 480px;
+  right: 474px;
+  height: 100%;
+  }
+@include respond-to(desktop) {//1200px
+  width: 560px;
+  right: 336px;
+    height: auto;
+  }
+@include respond-to(large-desktop) {//1600px
+  width: 663px;
+  height: auto;
+  right: 110px;
+    height: 100%;
+  }
+@include respond-to(tv) {//1920px
+  }
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+// ------------------------
+.line-button {
+  position: relative;
+  left: -467px;
+  top: 525px;
+  width: 1062px;
+  height: 1px;
+  transform: rotate(90deg);
+  background: linear-gradient(
+    90deg,
+    rgba(46, 236, 197, 0) 0%,
+    rgba(46, 236, 197, 1) 50%,
+    rgba(46, 236, 197, 1) 50%,
+    rgba(46, 236, 197, 0) 100%
+  );
+}
+.scroll-button {
+  position: relative;
+  left: 106px;
+
+  @include respond-to(mobile-portrait) {//0px
+    display: none;
+  }
+
+  @include respond-to(mobile) {//320px
+    display: none;
+  } 
+
+@include respond-to(mobile-landscape) {//480px
+  display: none;
+  }
+
+  @include respond-to(tablet-portrait) {//768px
+   display: block;
+  left: -20px;
+  }
+
+@include respond-to(tablet-landscape) {//992px
+  display: block;
+  }
+@include respond-to(desktop) {//1200px
+  left: 0px;
+  }
+@include respond-to(large-desktop) {//1600px
+  left: 80px;
+  }
+@include respond-to(tv) {//1920px
+   left: 106px;
+  }
+}
+
+.small-button-1 {
+  position: relative;
+  left: 56px;
+  top: 175px;
+  z-index: 10;
+
+  &::before {
+    content: '01';
+    position: absolute;
+    top: 50%;
+    left: -40px; /* Добавляем расстояние в 14px от кнопки */
+    transform: translateY(-50%);
+    background: linear-gradient(149.14deg, rgb(181, 254, 239), rgb(46, 236, 197));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 35px;
+    letter-spacing: 0%;
+    z-index: 10;
+
+    @include respond-to(tablet-portrait) {//768px
+    font-size: 18px;
+    left: -32px;
+    }
+    @include respond-to(tablet-landscape) {//992px
+      font-size: 25px;
+      left: -40px;
+      }
+    @include respond-to(desktop) {//1200px
+      }
+    @include respond-to(large-desktop) {//1600px
+      }
+    @include respond-to(tv) {//1920px
+      }
+  }
+}
+
+.small-button-2 {
+  position: relative;
+  left: 56px;
+  top: 750px;
+  z-index: 10;
+
+  @include respond-to(tablet-portrait) {//768px
+    top: 360px;
+  }
+
+@include respond-to(tablet-landscape) {//992px
+  top: 570px;
+  }
+@include respond-to(desktop) {//1200px
+  }
+@include respond-to(large-desktop) {//1600px
+  }
+@include respond-to(tv) {//1920px
+  }
+
+  &::before {
+    content: '02';
+    position: absolute;
+    top: 50%;
+    left: -40px; /* Добавляем расстояние в 14px от кнопки */
+    transform: translateY(-50%);
+    background:  linear-gradient(180deg, #5d7c76 0%, #0a3028 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 35px;
+    letter-spacing: 0%;
+    z-index: 10;
+
+    @include respond-to(tablet-portrait) {//768px
+    font-size: 18px;
+    left: -32px;
+    }
+    @include respond-to(tablet-landscape) {//992px
+  font-size: 25px;
+  left: -40px;
+  }
+  }
+}
+
+.small-button-3 {
+  position: relative;
+  left: 56px;
+  top: 770px;
+  z-index: 10;
+
+  @include respond-to(tablet-portrait) {//768px
+    top: 376px;
+  }
+
+@include respond-to(tablet-landscape) {//992px
+   top: 580px;
+  }
+@include respond-to(desktop) {//1200px
+  }
+@include respond-to(large-desktop) {//1600px
+  }
+@include respond-to(tv) {//1920px
+  }
+
+  &::before {
+    content: '03';
+    position: absolute;
+    top: 50%;
+    left: -40px; /* Добавляем расстояние в 14px от кнопки */
+    transform: translateY(-50%);
+    background:  linear-gradient(180deg, #5d7c76 0%, #0a3028 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 35px;
+    letter-spacing: 0%;
+    z-index: 10;
+
+    @include respond-to(tablet-portrait) {//768px
+    font-size: 18px;
+    left: -32px;
+    }
+
+    @include respond-to(tablet-landscape) {//992px
+   font-size: 25px;
+   left: -40px;
+  }
+}
+}
+
+.small-button-4 {
+  position: relative;
+  left: 56px;
+  top: 790px;
+  z-index: 10;
+
+  @include respond-to(tablet-portrait) {//768px
+    top: 390px;
+  }
+
+@include respond-to(tablet-landscape) {//992px
+  top: 590px;
+  }
+@include respond-to(desktop) {//1200px
+  }
+@include respond-to(large-desktop) {//1600px
+  }
+@include respond-to(tv) {//1920px
+  }
+
+  &::before {
+    content: '04';
+    position: absolute;
+    top: 50%;
+    left: -40px; /* Добавляем расстояние в 14px от кнопки */
+    transform: translateY(-50%);
+    background:  linear-gradient(180deg, #5d7c76 0%, #0a3028 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 35px;
+    letter-spacing: 0%;
+    z-index: 10;
+
+    @include respond-to(tablet-portrait) {//768px
+    font-size: 18px;
+    left: -32px;
+    }
+    @include respond-to(tablet-landscape) {//992px
+  font-size: 25px;
+  left: -40px; 
+  }
+  }
+}
+
+.small-button-5 {
+  position: relative;
+  left: 56px;
+  top: 810px;
+  z-index: 10;
+
+  @include respond-to(tablet-portrait) {//768px
+    top: 406px;
+  }
+
+@include respond-to(tablet-landscape) {//992px
+   top: 600px;
+  }
+@include respond-to(desktop) {//1200px
+  }
+@include respond-to(large-desktop) {//1600px
+  }
+@include respond-to(tv) {//1920px
+  }
+
+  &::before {
+    content: '05';
+    position: absolute;
+    top: 50%;
+    left: -40px; /* Добавляем расстояние в 14px от кнопки */
+    transform: translateY(-50%);
+    background:  linear-gradient(180deg, #5d7c76 0%, #0a3028 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 35px;
+    letter-spacing: 0%;
+    z-index: 10;
+
+    @include respond-to(tablet-portrait) {//768px
+    font-size: 18px;
+    left: -32px;
+    }
+
+    @include respond-to(tablet-landscape) {//992px
+   font-size: 25px;
+   left: -40px;
+  }
+  }
+}
+
+.section-line-bottom {
+  position: relative;
+  bottom: 2px;
+  width: 1920px;
+height: 5px;
+background: linear-gradient(135.00deg, rgba(42, 188, 158, 0) 0%,rgb(42, 188, 158) 48.646%,rgba(42, 188, 158, 0) 100%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@include respond-to(mobile-portrait) {//0px
+  }
+
+  @include respond-to(mobile) {//320px
+  } 
+
+@include respond-to(mobile-landscape) {//480px
+  }
+
+  @include respond-to(tablet-portrait) {//768px
+  }
+
+@include respond-to(tablet-landscape) {//992px
+  }
+@include respond-to(desktop) {//1200px
+  }
+@include respond-to(large-desktop) {//1600px
+  }
+@include respond-to(tv) {//1920px
+  }

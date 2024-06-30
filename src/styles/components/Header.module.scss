@@ -1,0 +1,186 @@
+@import '../utils/mixinsMobile.scss';
+
+.header {
+  margin-top: 50px;
+  height: 3.625rem;
+  width: 100%;
+  box-sizing: border-box;
+
+        @include respond-to(mobile-portrait) {//0px
+          height: 38px;
+          margin-top: 50px;
+        }
+
+        @include respond-to(mobile) {//320px
+          height: 38px;
+          margin-top: 20px;
+        } 
+        @include respond-to(mobile-m) {//375px
+          height: 38px;
+          margin-top: 20px;
+        } 
+        @include respond-to(mobile-l) {//425px
+          height: 38px;
+          margin-top: 20px;
+        } 
+
+        @include respond-to(mobile-landscape) {//480px
+          height: 38px;
+          margin-top: 20px;
+        }
+
+        @include respond-to(tablet-portrait) {//768px
+          margin-top: 50px;
+          height: 3.625rem;
+          
+        }
+
+        @include respond-to(tablet-landscape) {//992px
+
+        }
+        @include respond-to(desktop) {//1200px
+           
+        }
+        @include respond-to(large-desktop) {//1600px
+         
+        }
+        @include respond-to(tv) {//1920px
+          
+        }
+
+
+    &__inner {
+      height: 100%;
+      max-width: 1274px;
+      margin-left:20.3125rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+        @include respond-to(mobile-portrait) {//0px
+          margin-inline: 0 .5rem;
+        }
+
+        @include respond-to(mobile) {//320px
+          margin-inline: 0 8px;
+        } 
+
+        @include respond-to(mobile-landscape) {//480px
+          margin-inline: 0 .5rem;
+        }
+        @include respond-to(tablet-portrait) {//768px
+          margin-inline: 20px;
+          padding-left: 48px;
+        }
+
+        @include respond-to(tablet-landscape) {//992px
+          margin-left:96px;
+          margin-right: 0;
+          padding-left: 8px;
+          }
+        @include respond-to(desktop) {//1200px
+          margin-left:6.875rem;
+           padding-left: 0px;
+          }
+        @include respond-to(large-desktop) {//1600px
+           padding-left: 174px;
+          }
+        @include respond-to(tv) {//1920px
+          padding-left: 325px;
+          }
+    }
+
+
+    &__burger {
+      border: 0;
+      background-color: transparent;
+      width: 34px;
+      aspect-ratio: 1;
+      box-sizing: border-box;
+      // order: 1;
+      
+        @include respond-to(mobile-portrait) {//0px
+          display: block;
+          width: 34px;
+          aspect-ratio: 1;
+        }
+
+        @include respond-to(mobile) {//320px
+          display: block;
+          width: 34px;
+          aspect-ratio: 1;
+        }
+
+        @include respond-to(mobile-m) {//375px
+          display: block;
+          width: 34px;
+          aspect-ratio: 1;
+          } 
+        @include respond-to(mobile-l) {//425px
+          width: 34px;
+          aspect-ratio: 1;
+          display: block;
+          } 
+
+        @include respond-to(mobile-landscape) {//480px
+          display: block;
+          width: 34px;
+          aspect-ratio: 1;
+        }
+
+        @include respond-to(tablet-portrait) {//768px
+          display: none;
+        }
+
+        @include respond-to(tablet-landscape) {//992px
+          display: none;
+          }
+    }
+
+
+    &__button {
+      @include respond-to(mobile-portrait) {//0px
+          display: none;
+        }
+
+        @include respond-to(mobile) {//320px
+          display: none;
+        }
+
+        @include respond-to(mobile-landscape) {//480px
+          display: none;
+        }
+
+        @include respond-to(tablet-portrait) {//768px
+          display: block;
+        }
+
+        @include respond-to(tablet-landscape) {//992px
+          display: block;
+          }
+    }
+  }   
+
+
+
+
+@include respond-to(mobile-portrait) {//0px
+  }
+
+@include respond-to(mobile) {//320px
+  } 
+
+@include respond-to(mobile-landscape) {//480px
+  }
+
+@include respond-to(tablet-portrait) {//768px
+  }
+
+@include respond-to(tablet-landscape) {//992px
+  }
+@include respond-to(desktop) {//1200px
+  }
+@include respond-to(large-desktop) {//1600px
+  }
+@include respond-to(tv) {//1920px
+  }
