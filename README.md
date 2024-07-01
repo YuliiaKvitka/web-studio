@@ -10,7 +10,7 @@
 Библиотеки:
 - react-input-mask,
 - react-phone-number-input,
-- scss,
+- sass,
 - yup.
   
 Адаптивная верстка, слайдеры, анимация, SCSS, BEM. 
